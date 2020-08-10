@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TokenRequestObservable</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+    <script type="text/javascript" src="../../../scripts/main.js" async="async"></script>
+    <link href="../../../images/docs_logo.svg">
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftColumn">
+        <div id="logo"></div>
+        <div id="paneSearch"></div>
+        <div id="sideMenu"></div>
+      </div>
+      <div id="main">
+        <div id="leftToggler"><span class="icon-toggler"></span></div>
+        <script type="text/javascript" src="../../../scripts/pages.js"></script>
+        <script type="text/javascript" src="../../../scripts/main.js"></script>
+        <div class="main-content" id="content" pageIds="com.azure.android.core.credential/TokenRequestObservable///PointingToDeclaration//1362225595">
+          <div class="navigation-wrapper" id="navigation-wrapper">
+            <div class="breadcrumbs"><a href="../../index.html">azure-core</a>/<a href="../index.html">com.azure.android.core.credential</a>/<a href="index.html">TokenRequestObservable</a></div>
+            <div class="pull-right d-flex">
+              <div id="searchBar"></div>
+            </div>
+          </div>
+          <div class="cover ">
+            <h1 class="cover"><span>Token</span><wbr></wbr><span>Request</span><wbr></wbr><span>Observable</span></h1>
+            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace">public final class <a href="index.html">TokenRequestObservable</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">An Observable to send the token request from a background thread to an Observer in the main UI thread. </p><p class="paragraph">A use case of this type is - sending a token request from <a href="https://developer.android.com/reference/androidx/lifecycle/ViewModel.html">androidx.lifecycle.ViewModel</a> code running in a background thread to the main UI thread, where the actual acquisition of token is interactive, e.g. it involves <a href="https://developer.android.com/reference/android/app/Activity.html">android.app.Activity</a> UI. This Observable decouples the <a href="https://developer.android.com/reference/androidx/lifecycle/ViewModel.html">androidx.lifecycle.ViewModel</a> from the UI so that the former will not hold a reference to the UI component, holding such reference can lead to a memory leak. However, the Observer of this Observable can hold a UI reference, because the Observer is removed when the UI that the Observer is associated with is in the <a href="https://developer.android.com/reference/androidx/lifecycle/Lifecycle.State.html#DESTROYED">DESTROYED</a>state.</p></div></div>
+          </div>
+          <div class="tabbedcontent">
+            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Sources">Sources</button></div>
+            <div class="tabs-section-body">
+              <h2 class="tabbedcontent">Constructors</h2>
+              <div class="table" data-togglable="Constructors"><a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FTokenRequestObservable%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F1362225595" anchor-label="TokenRequestObservable" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FTokenRequestObservable%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow keyValue TabbedContent">
+                    <div class=""><span class="inline-flex"><a href="-token-request-observable.html">TokenRequestObservable</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FTokenRequestObservable%2F%23%2FPointingToDeclaration%2F%5D%2FConstructors%2F1362225595"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title">
+                        <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="-token-request-observable.html">TokenRequestObservable</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><div class="brief ">Creates a <a href="index.html">TokenRequestObservable</a> to send the token request and observe for it.</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Functions</h2>
+              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="observe" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="observe.html">observe</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block">void <a href="observe.html">observe</a>(<a href="https://developer.android.com/reference/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a> <a href="observe.html">owner</a>, <a href="../-token-request-observer/index.html">TokenRequestObserver</a> <a href="observe.html">observer</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="observe" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="observe" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2Fobserve%2F%23androidx.lifecycle.LifecycleOwner%23com.azure.android.core.credential.TokenRequestObserver%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a>Register an Observer that listens for a token request Event and associates the Observer with the lifecycle ofthe given owner.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+<a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="sendRequest" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="send-request.html">sendRequest</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div>
+                      <div class="title"><div class="divergent-group" data-filterable-current=":sdk:core:azure-core:dokkaHtml/release" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
+
+  <div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":sdk:core:azure-core:dokkaHtml/release"><div class="symbol monospace block"><a href="../-token-request-handle/index.html">TokenRequestHandle</a> <a href="send-request.html">sendRequest</a>(<a href="https://developer.android.com/reference/java/util/List.html">List</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html">String</a>&gt; <a href="send-request.html">scopes</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+<a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="sendRequest" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a><div class="brief "><a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" anchor-label="sendRequest" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2FsendRequest%2F%23java.util.List%3Cjava.lang.String%3E%2FPointingToDeclaration%2F%5D%2FFunctions%2F1362225595" data-filterable-set=":sdk:core:azure-core:dokkaHtml/release"></a>Emits a token request to a <a href="../-token-request-observer/index.html">TokenRequestObserver</a> registered through <a href="observe.html">observe</a>.</div></div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="">Sources</h2>
+              <div class="table" data-togglable="Sources"><a data-name="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2F%2F%2FPointingToDeclaration%2F%5D%2FSource%2F191046381" anchor-label="https://github.com/Azure/azure-sdk-for-android/tree/master/sdk/core/azure-core/src/main/java/com/azure/android/core/credential/TokenRequestObservable.java#L10" id="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2F%2F%2FPointingToDeclaration%2F%5D%2FSource%2F191046381" data-filterable-set=":sdk:core:azure-core:dokkaHtml/main"></a>
+                <div class="table-row" data-filterable-current=":sdk:core:azure-core:dokkaHtml/main" data-filterable-set=":sdk:core:azure-core:dokkaHtml/main">
+                  <div class="main-subrow keyValue ">
+                    <div class=""><span class="inline-flex"><a href="https://github.com/Azure/azure-sdk-for-android/tree/master/sdk/core/azure-core/src/main/java/com/azure/android/core/credential/TokenRequestObservable.java#L10">(source)</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.azure.android.core.credential%2FTokenRequestObservable%2F%2F%2FPointingToDeclaration%2F%5D%2FSource%2F191046381"></span>
+                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                        </span></span></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2020 Copyright</span><span class="pull-right"><span>Sponsored and developed by dokka</span><a href="https://github.com/Kotlin/dokka"><span class="padded-icon"></span></a></span></div>
+      </div>
+    </div>
+  </body>
+</html>
+
